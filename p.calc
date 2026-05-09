@@ -1,0 +1,33 @@
+# Test 5: Logic and Comparison
+var a = 10
+var b = 20
+var c = 10
+
+# Equality and inequality
+if a == c {
+    print "a equals c"
+}
+
+if a != b {
+    print "a does not equal b"
+}
+
+# Logical and / or
+if a < b and b > 15 {
+    print "both conditions true"
+}
+
+if a > 100 or b == 20 {
+    print "at least one true"
+}
+
+# Logical not
+var flag = false
+if not flag {
+    print "flag is false"
+}
+
+# Chained comparison
+if a >= 10 and a <= 20 {
+    print "a is between 10 and 20"
+}

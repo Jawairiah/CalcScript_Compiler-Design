@@ -1,0 +1,41 @@
+# CalcScript Example 3 - Scientific Calculator
+
+deg
+
+print "=== Trig in Degrees ==="
+print sin(30)
+print cos(60)
+print tan(45)
+
+rad
+
+print "=== Trig in Radians ==="
+var pi = 3.14159265
+print sin(pi / 6)
+print cos(pi / 3)
+
+deg
+
+print "=== Other Math ==="
+print sqrt(144)
+print abs(-99)
+print log(1000)
+
+func hypotenuse(a, b) {
+    return sqrt(a ^ 2 + b ^ 2)
+}
+
+print "Hypotenuse of 3,4 triangle:"
+print hypotenuse(3, 4)
+
+func quadratic(a, b, c) {
+    var discriminant = b ^ 2 - 4 * a * c
+    if discriminant < 0 {
+        print "No real roots"
+        return 0
+    }
+    return (-b + sqrt(discriminant)) / (2 * a)
+}
+
+print "Root of x^2 - 5x + 6:"
+print quadratic(1, -5, 6)

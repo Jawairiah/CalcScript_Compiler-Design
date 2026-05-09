@@ -1,0 +1,30 @@
+# CalcScript Example 1 - Circle Calculator (from proposal)
+
+var r = 7
+var pi = 3.14159
+
+func circleArea(r) {
+    return pi * r ^ 2
+}
+
+func circlePerimeter(r) {
+    return 2 * pi * r
+}
+
+var area = circleArea(r)
+var peri = circlePerimeter(r)
+
+print area
+print peri
+
+var angle = 45
+deg
+
+print sin(angle)
+print cos(angle)
+
+if area > 100 {
+    print "Large circle"
+} else {
+    print "Small circle"
+}

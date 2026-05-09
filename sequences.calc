@@ -1,0 +1,39 @@
+# CalcScript Example 2 - Factorial & Fibonacci
+
+func factorial(n) {
+    var result = 1
+    var i = 1
+    while i <= n {
+        result = result * i
+        i = i + 1
+    }
+    return result
+}
+
+func fibonacci(n) {
+    if n <= 1 {
+        return n
+    }
+    var a = 0
+    var b = 1
+    var i = 2
+    while i <= n {
+        var temp = a + b
+        a = b
+        b = temp
+        i = i + 1
+    }
+    return b
+}
+
+print "Factorials:"
+print factorial(1)
+print factorial(5)
+print factorial(10)
+
+print "Fibonacci sequence (first 8):"
+var k = 0
+while k <= 7 {
+    print fibonacci(k)
+    k = k + 1
+}
